@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get "fakes" => "fake#index"
   get "/hello" =? "/hello#index"
+  get "wassup" => "wassup#index"
 
   # Defines the root path route ("/")
   # root "posts#index"
