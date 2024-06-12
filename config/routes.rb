@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "rentals" => "rentals#index"
   get "rentals/:id" => "rentals#show"
   post "rentals" => "rentals#create"
+  patch "rentals/:id" => "rentals#update"
 
   # Defines the root path route ("/")
   # root "posts#index"

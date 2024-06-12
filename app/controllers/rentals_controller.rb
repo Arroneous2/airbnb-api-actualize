@@ -26,4 +26,22 @@ class RentalsController < ApplicationController
        )
     render :show
   end
+
+  def update
+    @rental = Rental.find(params[:id])
+    @rental.update(
+      user_id: params[:user_id] || @rental.user_id, 
+      address: params[:address] || @rental.address, 
+      city: params[:city] || @rental.city, 
+      state: params[:state] || @rental.state, 
+      price: params[:price] || @rental.price, 
+      description: params[:description] || @rental.description, 
+      home_type: params[:home_type] || @rental.home_type, 
+      rental_type: params[:rental_type] || @rental.rental_type, 
+      total_occupancy: params[:total_occupancy] || @rental.total_occupancy,
+      total_bed_rentals: params[:total_bed_rentals] || @rental.total_bed_rentals, 
+      total_bathrooms: params[:total_bathrooms] || @rental.total_bathrooms
+    )
+    render :show
+  end
 end
