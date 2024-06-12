@@ -44,4 +44,10 @@ class RentalsController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @rental = Rental.find(params[:id])
+    @rental.destroy
+    render json: {message: "Rental has been destroyed."}
+  end
 end
