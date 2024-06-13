@@ -16,3 +16,15 @@ Rental.create(user_id: 2, address: "9th st", city: "Dubuque", state: "Ia", price
 Rental.create(user_id: 3, address: "8th st", city: "Houston", state: "Tx", price: 300, description: "A glamourous apartment", home_type: "apartment", rental_type: "house", total_occupancy: 3, total_bed_rentals: 1, total_bathrooms: 2)
 
 Rental.create(user_id: 3, address: "7th st", city: "Houston", state: "Tx", price: 250, description: "an open floor concept bungalo", home_type: "bungalo", rental_type: "house", total_occupancy: 4, total_bed_rentals: 3, total_bathrooms: 2)
+
+user = User.new(name: "Alicia", email: "alicia@stone.com", password: "password", image: "https://imageio.forbes.com/blogs-images/jenglantz/files/2018/09/Screen-Shot-2018-09-10-at-3.34.49-PM.png")
+user.save
+
+user = User.new(name: "Albert", email: "albert@einstein.com", password: "password", image: "https://nationaltoday.com/wp-content/uploads/2022/04/Albert-Einstein-Birthday-1200x834.jpg.webp")
+user.save
+
+user = User.new(name: "Bruce", email: "bruce@wayne.com", password: "password", image: "https://static.wikia.nocookie.net/batman/images/8/8a/Adam_West.jpg")
+user.save
+
+user = User.new(name: "Edgar", email: "edgar@poe.com", password: "password", image: "https://hadikarimi.com/wp-content/uploads/2020/12/Edgar-1.jpg")
+user.save

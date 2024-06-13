@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   delete "rentals/:id" => "rentals#destroy"
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get "users" => "users#index"
 end
