@@ -1,5 +1,6 @@
 json.id rental.id
 json.user_id rental.user_id
+json.name rental.name
 json.address rental.address
 json.city rental.city
 json.state rental.state

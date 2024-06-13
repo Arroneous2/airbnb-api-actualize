@@ -13,6 +13,7 @@ class RentalsController < ApplicationController
   def create
     @rental = Rental.create(
       user_id: params[:user_id], 
+      name: params[:name], 
       address: params[:address], 
       city: params[:city], 
       state: params[:state], 
@@ -31,6 +32,7 @@ class RentalsController < ApplicationController
     @rental = Rental.find(params[:id])
     @rental.update(
       user_id: params[:user_id] || @rental.user_id, 
+      name: params[:name] || @rental.name, 
       address: params[:address] || @rental.address, 
       city: params[:city] || @rental.city, 
       state: params[:state] || @rental.state, 
