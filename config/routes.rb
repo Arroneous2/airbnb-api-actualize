@@ -21,4 +21,12 @@ Rails.application.routes.draw do
 
   get "users/:id" => "users#show"
   post "/users" => "users#create"
+
+  # Reservation
+  get "/reservations" => "reservations#index"
+  get "/reservations/:id" => "reservations#show"
+  post "/reservations" => "revervations#create"
+  put "/reservations" => "reservations#update"
+  delete "reservations" => "reservations#destroy"
+
 end
