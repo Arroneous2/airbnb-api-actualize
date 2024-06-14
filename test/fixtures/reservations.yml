@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  rental_id: MyString
+  start_date: MyString
+  end_date: MyString
+  price: MyString
+  total: MyString
+
+two:
+  user_id: MyString
+  rental_id: MyString
+  start_date: MyString
+  end_date: MyString
+  price: MyString
+  total: MyString
