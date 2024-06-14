@@ -29,6 +29,4 @@ Rails.application.routes.draw do
   put "/reservations" => "reservations#update"
   delete "reservations" => "reservations#destroy"
 
-  # Defines the root path route ("/")
-  # root "posts#index"
 end
