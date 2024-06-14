@@ -37,6 +37,12 @@ RentalImage.create(rental_id: 3, url: "https://cdn.autonomous.ai/static/upload/i
 
 RentalImage.create(rental_id: 1, url: "https://www.redfin.com/blog/wp-content/uploads/2022/04/california-bungalow-house.jpg")
 
+Review.create(reservation_id:1, rental_id:1, user_id:1, rating: 4, comment: "Had a good time")
 
+Review.create(reservation_id:2, rental_id:1, user_id:1, rating: 3, comment: "Meh, it was fine")
+
+Review.create(reservation_id:1, rental_id:2, user_id:1, rating: 2, comment: "Still dirty when arrived")
+
+Review.create(reservation_id:3, rental_id:3, user_id:1, rating: 5, comment: "Outstanding")
 
 

@@ -20,4 +20,12 @@ Rails.application.routes.draw do
   delete "rental_images/:id" => "rental_images#destroy"
 
   get "users" => "users#index"
+
+  get "review" => "reviews#index"
+  get "review/:id" => "reviews#show"
+  post "review" => "reviews#create"
+  patch "review/:id" => "reviews#update"
+  delete "review/:id" => "reviews#destroy"
+
+  
 end
