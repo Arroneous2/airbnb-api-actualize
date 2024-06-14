@@ -28,3 +28,15 @@ user.save
 
 user = User.new(name: "Edgar", email: "edgar@poe.com", password: "password", image: "https://hadikarimi.com/wp-content/uploads/2020/12/Edgar-1.jpg")
 user.save
+
+RentalImage.create(rental_id: 1, url: "https://media.architecturaldigest.com/photos/65dce5d489212862875c04a9/16:9/w_2560%2Cc_limit/GettyImages-74179815.jpg")
+
+RentalImage.create(rental_id: 2, url: "https://cdn.britannica.com/51/94151-050-99189B61/Barn.jpg")
+
+RentalImage.create(rental_id: 3, url: "https://cdn.autonomous.ai/static/upload/images/new_post/great-shed-bar-ideas-to-enjoy-drinks-6163-1677465166832.webp")
+
+RentalImage.create(rental_id: 1, url: "https://www.redfin.com/blog/wp-content/uploads/2022/04/california-bungalow-house.jpg")
+
+
+
+
