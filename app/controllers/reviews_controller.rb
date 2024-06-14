@@ -10,11 +10,13 @@ class ReviewsController < ApplicationController
   end
 
   def create
-  end
-
-  def update
-  end
-
-  def delete
+    @review = Review.create(
+    reservation_id: params[:reservation_id],
+    rental_id: params[:rental_id],
+    user_id: params[:user_id],
+    rating: params[:rating],
+    comment: params[:comment]
+    )
+    render :show
   end
 end

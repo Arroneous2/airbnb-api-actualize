@@ -22,9 +22,7 @@ Rails.application.routes.draw do
   get "users/:id" => "users#show"
   post "/users" => "users#create"
 
-  get "review" => "reviews#index"
-  get "review/:id" => "reviews#show"
-  post "review" => "reviews#create"
-  patch "review/:id" => "reviews#update"
-  delete "review/:id" => "reviews#destroy"
+  get "reviews" => "reviews#index"
+  get "reviews/:id" => "reviews#show"
+  post "reviews" => "reviews#create"
 end
