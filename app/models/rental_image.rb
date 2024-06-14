@@ -1,3 +1,3 @@
 class RentalImage < ApplicationRecord
-  belongs_to :rentals
+  belongs_to :rental
 end
