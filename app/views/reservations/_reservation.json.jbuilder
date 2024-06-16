@@ -1,3 +1,4 @@
+json.id reservation.id
 json.user_id reservation.user_id
 json.rental_name reservation.rental.name
 json.start_date reservation.start_date
