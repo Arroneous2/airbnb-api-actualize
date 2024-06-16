@@ -18,6 +18,7 @@ class ReservationsController < ApplicationController
       price: params[:price],
       total: params[:total]
     )
+    render :show
   end
 
   def update
