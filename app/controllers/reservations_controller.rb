@@ -1,10 +1,4 @@
 class ReservationsController < ApplicationController
-  
-  # @start_date = Date.parse(params[:reservation][:start_date])
-  # @end_date = Date.parse(params[:reservation][:end_date])
-  # @total_days = (end_date - start_date).to_i
-  # @total = (price * total_days)
-  
   def index
     @reservations = Reservation.all
     render :index
@@ -24,10 +18,6 @@ class ReservationsController < ApplicationController
       price: params[:price],
       total: params[:total]
     )
-    if reservation.save
-      render template: "reservations/show"
-    else render json: { message: "Reservation could not be created." }
-    end
   end
 
   def update

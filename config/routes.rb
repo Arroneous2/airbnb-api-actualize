@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   # Reservation
   get "/reservations" => "reservations#index"
   get "/reservations/:id" => "reservations#show"
-  post "/reservations" => "revervations#create"
+  post "/reservations" => "reservations#create"
   put "/reservations" => "reservations#update"
   delete "reservations" => "reservations#destroy"
 
