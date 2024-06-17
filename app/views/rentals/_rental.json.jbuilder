@@ -6,6 +6,8 @@ json.city rental.city
 json.state rental.state
 json.price rental.price
 json.description rental.description
+json.home_type rental.home_type
+json.rental_type rental.rental_type
 json.total_occupancy rental.total_occupancy
 json.total_bed_rentals rental.total_bed_rentals
 json.total_bathrooms rental.total_bathrooms
