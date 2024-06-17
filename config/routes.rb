@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   patch "rental_images/:id" => "rental_images#update"
   delete "rental_images/:id" => "rental_images#destroy"
 
-  get "users/:id" => "users#show"
+  get "/users" => "users#index"
+  get "/users/:id" => "users#show"
   post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
 end
