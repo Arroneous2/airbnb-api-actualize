@@ -45,4 +45,40 @@ Review.create(reservation_id:1, rental_id:2, user_id:1, rating: 2, comment: "Sti
 
 Review.create(reservation_id:3, rental_id:3, user_id:1, rating: 5, comment: "Outstanding")
 
+Reservation.create(
+  user_id: 1,
+  rental_id: 1,
+  start_date: "2021-10-10",
+  end_date: "2021-10-11",
+  price: 10,
+  total: 100
+)
+
+Reservation.create(
+  user_id: 1,
+  rental_id: 2,
+  start_date: "2021-10-10",
+  end_date: "2021-10-11",
+  price: 10,
+  total: 100
+)
+
+Reservation.create(
+  user_id: 2,
+  rental_id: 1,
+  start_date: "2021-10-10",
+  end_date: "2021-10-11",
+  price: 10,
+  total: 100
+)
+
+Reservation.create(
+  user_id: 3,
+  rental_id: 3,
+  start_date: "2021-10-10",
+  end_date: "2021-10-11",
+  price: 10,
+  total: 100
+)
+
 
