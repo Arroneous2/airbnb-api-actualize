@@ -1,9 +1,11 @@
 json.id reservation.id
 json.user_id reservation.user_id
 json.rental_name reservation.rental.name
+json.rental_id reservation.rental_id
 json.start_date reservation.start_date
 json.end_date reservation.end_date
 json.price reservation.price
 json.total reservation.total
+json.images reservation.rental.rental_images
 json.created_at reservation.created_at
 json.updated_at reservation.updated_at
